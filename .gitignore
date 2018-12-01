@@ -3,3 +3,7 @@
 ################################################################################
 
 /Debug
+/Release
+/AdventOfCode18.vcxproj
+/AdventOfCode18.vcxproj.filters
+/AdventOfCode18.vcxproj.user
