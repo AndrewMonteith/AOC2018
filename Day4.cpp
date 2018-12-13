@@ -1,5 +1,6 @@
 #include <regex>
 #include <numeric>
+#include <optional>
 #include "Utils.hpp"
 
 enum LogType { GuardStarting, Asleep, WakingUp };
@@ -61,7 +62,6 @@ std::pair<int, std::array<int, 60>> ProcessGuard(std::vector<LogEntry>::iterator
                                                  const std::vector<LogEntry>::iterator& end_it) {
   auto guard_id = it->id;
   std::optional<Timestamp> fell_asleep = std::nullopt;
-
   auto was_asleep = std::array<int, 60>();
 
   auto record_as_sleeping = [&](int from, int to) {

@@ -17,4 +17,12 @@ std::vector<std::string> ReadLines(std::string filename) {
   return result;
 }
 
+std::string ReadLine(std::string filename) {
+	auto file = std::ifstream(filename);
+
+	auto line = std::string();
+	std::getline(file, line);
+	return line;
+}
+
 }  // namespace aoc
