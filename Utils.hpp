@@ -1,7 +1,12 @@
+#ifndef H_UTILS
+#define H_UTILS
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
+#include <set>
+#include <algorithm>
+#include <map>
 
 namespace aoc {
 
@@ -26,3 +31,4 @@ std::string ReadLine(std::string filename) {
 }
 
 }  // namespace aoc
+#endif

@@ -128,7 +128,7 @@ int SolvePart2(const std::vector<Point>& points) {
 }
 
 int main() {
-    auto lines = aoc::ReadLines("day6input.txt");
+    auto lines = aoc::ReadLines("Day6.txt");
     auto points = ParseInput(lines);
 
     auto solution1 = SolvePart1(points);

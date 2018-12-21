@@ -1,5 +1,5 @@
 #!/bin/bash
-g++ -g -std=c++17 "Day$1.cpp" *.hpp -o ./Inputs/AOC;
+g++ -O0 -g -std=c++17 "Day$1.cpp" *.hpp -o ./Inputs/AOC;
 cd ./Inputs
 gdb AOC
 rm AOC
